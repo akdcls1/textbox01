@@ -28,13 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.reverse_text = new System.Windows.Forms.TextBox();
+            this.upper_text = new System.Windows.Forms.TextBox();
+            this.input_text = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // reverse_text
+            // 
+            this.reverse_text.Location = new System.Drawing.Point(190, 159);
+            this.reverse_text.Name = "reverse_text";
+            this.reverse_text.ReadOnly = true;
+            this.reverse_text.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.reverse_text.Size = new System.Drawing.Size(170, 21);
+            this.reverse_text.TabIndex = 0;
+            this.reverse_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // upper_text
+            // 
+            this.upper_text.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.upper_text.Location = new System.Drawing.Point(477, 158);
+            this.upper_text.Name = "upper_text";
+            this.upper_text.ReadOnly = true;
+            this.upper_text.Size = new System.Drawing.Size(158, 21);
+            this.upper_text.TabIndex = 1;
+            // 
+            // input_text
+            // 
+            this.input_text.Location = new System.Drawing.Point(246, 277);
+            this.input_text.Name = "input_text";
+            this.input_text.Size = new System.Drawing.Size(269, 21);
+            this.input_text.TabIndex = 2;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.input_text);
+            this.Controls.Add(this.upper_text);
+            this.Controls.Add(this.reverse_text);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox reverse_text;
+        private System.Windows.Forms.TextBox upper_text;
+        private System.Windows.Forms.TextBox input_text;
     }
 }
 
