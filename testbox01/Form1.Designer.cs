@@ -31,6 +31,7 @@
             this.reverse_text = new System.Windows.Forms.TextBox();
             this.upper_text = new System.Windows.Forms.TextBox();
             this.input_text = new System.Windows.Forms.TextBox();
+            this.convert_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // reverse_text
@@ -59,11 +60,21 @@
             this.input_text.Size = new System.Drawing.Size(269, 21);
             this.input_text.TabIndex = 2;
             // 
+            // convert_button
+            // 
+            this.convert_button.Location = new System.Drawing.Point(386, 227);
+            this.convert_button.Name = "convert_button";
+            this.convert_button.Size = new System.Drawing.Size(75, 23);
+            this.convert_button.TabIndex = 3;
+            this.convert_button.Text = "convert";
+            this.convert_button.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.convert_button);
             this.Controls.Add(this.input_text);
             this.Controls.Add(this.upper_text);
             this.Controls.Add(this.reverse_text);
@@ -79,6 +90,7 @@
         private System.Windows.Forms.TextBox reverse_text;
         private System.Windows.Forms.TextBox upper_text;
         private System.Windows.Forms.TextBox input_text;
+        private System.Windows.Forms.Button convert_button;
     }
 }
 
