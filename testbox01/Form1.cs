@@ -23,22 +23,23 @@ namespace testbox01
             upper_text.Text = input_text.Text;  //inputtext에 값이 입력되면 uppertext로 값을 넘겨줌.
             reverse_text.Text = input_text.Text;    //inputtext에 값이 입력되면 reversetext로 값을 넘겨줌.
 
-            char[] chararray = this.reverse_text.Text.ToCharArray();    //char배열인 chararray에 reversetext값을 추가
-            Array.Reverse(chararray);   //배열을 뒤집음
+            char[] chararray = this.reverse_text.Text.ToCharArray();    //char배열인 chararray에 reversetext값을 추가.
+            Array.Reverse(chararray);   //배열을 뒤집음.
             string reverseTxt = ""; //reverseTxt string값을 만들어줌.
-            for (int i = 0; i <= chararray.Length - 1; i++) //chararray의 length값만큼 반복
+            for (int i = 0; i <= chararray.Length - 1; i++) //chararray의 length값만큼 반복.
             {
-                reverseTxt += chararray.GetValue(i);    //
+                reverseTxt += chararray.GetValue(i);    //뒤집은 배열을 reverseTxt에 값 추가.
             }
             this.reverse_text.Text = reverseTxt;    //reverseTxt의 값을 reversetext값에 넣어줌.
         }
 
         private void reverse_text_TextChanged(object sender, EventArgs e)
-        {   //만들어진 텍스트 같은걸 더블클릭 할 시에 나타나는 이벤트박스
+        {   //만들어진 텍스트 같은걸 더블클릭 할 시에 나타나는 이벤트박스, 버튼, 모두 가능
         }
 
         private void upper_text_TextChanged(object sender, EventArgs e)
         {
         }
+
     }
 }
