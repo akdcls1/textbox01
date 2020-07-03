@@ -30,16 +30,15 @@ namespace testbox01
             {
                 reverseTxt += chararray.GetValue(i);    //
             }
-            this.reverse_text.Text = reverseTxt;    //더해줌.
+            this.reverse_text.Text = reverseTxt;    //reverseTxt의 값을 reversetext값에 넣어줌.
         }
 
         private void reverse_text_TextChanged(object sender, EventArgs e)
-        {
+        {   //만들어진 텍스트 같은걸 더블클릭 할 시에 나타나는 이벤트박스
         }
 
         private void upper_text_TextChanged(object sender, EventArgs e)
         {
-            Application.DoEvents();
         }
     }
 }
