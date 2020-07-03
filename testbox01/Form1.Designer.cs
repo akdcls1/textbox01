@@ -38,20 +38,19 @@
             // 
             this.reverse_text.Location = new System.Drawing.Point(190, 159);
             this.reverse_text.Name = "reverse_text";
-            this.reverse_text.ReadOnly = true;
-            this.reverse_text.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.reverse_text.Size = new System.Drawing.Size(170, 21);
             this.reverse_text.TabIndex = 0;
-            this.reverse_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.reverse_text.TextChanged += new System.EventHandler(this.reverse_text_TextChanged);
             // 
             // upper_text
             // 
             this.upper_text.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.upper_text.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.upper_text.Location = new System.Drawing.Point(477, 158);
             this.upper_text.Name = "upper_text";
-            this.upper_text.ReadOnly = true;
             this.upper_text.Size = new System.Drawing.Size(158, 21);
             this.upper_text.TabIndex = 1;
+            this.upper_text.TextChanged += new System.EventHandler(this.upper_text_TextChanged);
             // 
             // input_text
             // 
@@ -59,6 +58,7 @@
             this.input_text.Name = "input_text";
             this.input_text.Size = new System.Drawing.Size(269, 21);
             this.input_text.TabIndex = 2;
+            this.input_text.TextChanged += new System.EventHandler(this.input_text_TextChanged);
             // 
             // convert_button
             // 
@@ -68,6 +68,7 @@
             this.convert_button.TabIndex = 3;
             this.convert_button.Text = "convert";
             this.convert_button.UseVisualStyleBackColor = true;
+            this.convert_button.Click += new System.EventHandler(this.convert_button_Click);
             // 
             // Form1
             // 
